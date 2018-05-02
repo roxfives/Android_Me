@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
             fragmentManager.beginTransaction()
                     .add(R.id.leg_container, legFragment)
                     .commit();
+
+            Button nextButton = (Button) findViewById(R.id.next_button);
+            nextButton.setVisibility(View.GONE);
         } else {
             isTwoPane = false;
         }
